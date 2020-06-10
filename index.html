@@ -1,57 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<meta charset="utf-8">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Correlation</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/d3Style.css">
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
 
-</head>
-
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-12">
-        <h2>Correlations Between Weather and Bikeshare trip</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12  col-md-9">
-        <div id="scatter">
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-xs-12  col-md-9">
-        <div class="article">
-
-          <p>Click on the axis to show different data(Y-axis first then X-axis)</p>
-          <p>Observing the correlation between Temp and Ave Duration, it is easy to
-            find out the trip duration grown as the temperature reached to 20-25 degrees.
-            Similarly the growth of the bike using frequency grow up as temperature rises.
-          </p>
-          <p>However if we choose to observe the correlation between Temperature and average distance travelled,
-            we can find the longest distance travelled (1322m) is under the temperature range of 0-5 degrees.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer-->
-  <div id="footer">
-    <p>CoolGirls &copy;2020 UT Data Bootcamp</p>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
-  <script type="text/javascript" src="assets/js/app.js"></script>
-
-</body>
-
-</html>
+<!-- Create a div where the graph will take place -->
+<div id="boxplot"></div>
+<p>This is a boxplot</p>
+<script type="text/javascript" src="js/boxplot.js"></script>
